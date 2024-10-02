@@ -1,0 +1,135 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="view_log_check_question"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+  >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">View Log</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div
+        class="modal-body"
+        style="display: flex; flex-direction: column; gap: 20px"
+      >
+        <table>
+          <th>Id</th>
+          <th>Quesion_id</th>
+          <th>Question</th>
+          <th>Instruction</th>
+          <th></th>
+          <tbody id="list_log"></tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          OK
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="log_check_question_detail"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+  >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Log detail</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div
+        class="modal-body"
+        style="display: flex; flex-direction: column; gap: 20px"
+      >
+        <pre id="raw_log"></pre>
+        <div
+          id="table_log"
+          style="display: flex; gap: 20px; justify-content: space-around"
+        >
+          <div class="" style="width: 560px">
+            <div class="charts-container" style="padding-top: 0px">
+              <div class="chart-container">
+                <canvas id="chart01"></canvas>
+              </div>
+              <div class="chart-container">
+                <canvas id="chart02"></canvas>
+              </div>
+              <div class="chart-container">
+                <canvas id="chart03"></canvas>
+              </div>
+              <div class="chart-container">
+                <canvas id="chart04"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="question" style="width: 500px">
+            <div
+              id="log_list-question"
+              class="table-wrapper"
+              style="max-height: 100%; width: 500px"
+            >
+              <table>
+                <thead class="sticky-header">
+                  <tr>
+                    <th>Id</th>
+                    <th>Spatial match</th>
+                    <th>Semantic match</th>
+                    <th>Bot decision</th>
+                    <th>Check</th>
+                  </tr>
+                </thead>
+                <tbody id="log_body"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal-footer"
+        style="display: flex; gap: 20px; justify-content: space-between"
+      >
+        <div>
+          <button onclick="raw_log()">Raw</button>
+          <button onclick="table_log()">Table</button>
+        </div>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+          onclick="back_to_list_log()"
+        >
+          Back
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

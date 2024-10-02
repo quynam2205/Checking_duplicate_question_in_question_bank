@@ -1,0 +1,75 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="compare"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+  style="z-index: 99999"
+>
+  <div
+    class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+  >
+    <div class="modal-content" style="min-height: 100%">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Compare Question</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <table border="1">
+          <tr>
+            <th></th>
+            <th>New Question</th>
+            <th>Old Question</th>
+          </tr>
+          <tr>
+            <td>Question</td>
+            <td class="new-question-content"></td>
+            <td class="old-question-content"></td>
+          </tr>
+          <tr>
+            <td>Answer</td>
+            <td class="new-answer"></td>
+            <td class="old-answer"></td>
+          </tr>
+          <tr>
+            <td>Difficulty</td>
+            <td class="new-difficulty"></td>
+            <td class="old-difficulty"></td>
+          </tr>
+          <tr>
+            <td>Learning Outcome</td>
+            <td class="new-learning_outcome"></td>
+            <td class="old-learning_outcome"></td>
+          </tr>
+          <tr>
+            <td>Subchapters</td>
+            <td class="new-subchapters"></td>
+            <td class="old-subchapters"></td>
+          </tr>
+          <tr>
+            <td>Instruction</td>
+            <td class="new-instruction"></td>
+            <td class="old-instruction"></td>
+          </tr>
+          <tr>
+            <td>Reasoning</td>
+            <td class="new-reasoning"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

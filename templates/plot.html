@@ -1,0 +1,50 @@
+<div class="page-2 hidden" style="width: 90%">
+  <div class="charts-container">
+    <div class="chart-container">
+      <canvas id="chart1"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="chart2"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="chart3"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="chart4"></canvas>
+    </div>
+  </div>
+  <div class="button">
+    <button type="button" onclick="BackToPage(2, 1)">Back</button>
+  </div>
+</div>
+<div class="question page-2 hidden">
+  <select id="numberQuestion" onclick="selectNumberQuestion()">
+    <option value="10">10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+  </select>
+  <div id="list-question" class="table-wrapper">
+    <table>
+      <thead class="sticky-header">
+        <tr>
+          <th>Id</th>
+          <th>Spatial match</th>
+          <th>Semantic match</th>
+          <th>Bot decision</th>
+          <th>Check</th>
+        </tr>
+      </thead>
+      <tbody id="body"></tbody>
+    </table>
+  </div>
+  <div class="button" style="margin-top: 20px">
+    <button type="button" onclick="save_question()"">Save to question bank</button>
+  </div>
+</div>
+
+<div id="successModal" class="modal hidden">
+  <div class="modal-content">
+    <p>Success!</p>
+    <button onclick="closeModal()">Close</button>
+  </div>
+</div>
