@@ -30,7 +30,7 @@ python app.py
 ![Basic_flow](images/Basic_flow.png)
 
 - The Ranking mechanism focuses on retrieving duplicated questions to the input question 𝑞𝑛+1. This process includes two main steps including related questions retrieval and decision-making module.
-![Ranking_mechanism_process](image/Ranking_mechanism_process.png)
+![Ranking_mechanism_process](images/Ranking_process.png)
 
 
 
