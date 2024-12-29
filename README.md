@@ -27,10 +27,10 @@ python app.py
 #### !Note: To run this, you have to use Gemini api. Change it in "python_algo/config.py" before you run.
 ## Methodology
 - We propose an approach that combines the LLM model to check the similarity of a question with the questions that already existed in the previous question bank. The proposed method includes the following main steps: Data acquisition, Data preprocessing, Ranking mechanism, Evaluation.
-![Example Image](images/example.png)
+![Example Image](Readme/Basic flow.png)
 
 - The Ranking mechanism focuses on retrieving duplicated questions to the input question 𝑞𝑛+1. This process includes two main steps including related questions retrieval and decision-making module.
-![Example Image](images/example.png)
+![Example Image](Readme/Ranking mechanism process.png)
 
 
 
